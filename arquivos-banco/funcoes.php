@@ -1,4 +1,7 @@
 <?php
+
+
+echo "Arquivo de funçôes rodando". PHP_EOL;
 function sacar(array $conta, float $valorASacar): array
 {
     if ($valorASacar > $conta['saldo']) {
@@ -24,3 +27,20 @@ function depositar(array $conta, float $valorADepositar): array
     }
     return $conta;
 }
+//list = ($idadeBruno, $idadeJoao, $idadeMaria) = $idadeList;
+
+
+
+
+
+
+
+
+
+//função para colocar o nome da conta em caps, porem nao é interessante neste codigo;
+function titularCaps(array &$conta)
+{
+$conta['titular'] = strtoupper($conta['titular']);
+echo $conta ['titular'].PHP_EOL;
+
+};
